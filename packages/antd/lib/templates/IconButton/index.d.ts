@@ -1,0 +1,10 @@
+import { ButtonProps } from 'antd';
+import { FormContextType, IconButtonProps, RJSFSchema, StrictRJSFSchema } from '@rjsf/utils';
+export type AntdIconButtonProps<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any> = IconButtonProps<T, S, F> & Pick<ButtonProps, 'block' | 'danger' | 'size'>;
+export default function IconButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
+export declare function AddButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
+export declare function CopyButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
+export declare function MoveDownButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
+export declare function MoveUpButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
+export declare function RemoveButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
+export declare function ClearButton<T = any, S extends StrictRJSFSchema = RJSFSchema, F extends FormContextType = any>(props: AntdIconButtonProps<T, S, F>): import("react/jsx-runtime").JSX.Element;
