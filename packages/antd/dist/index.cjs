@@ -41,7 +41,7 @@ __export(index_exports, {
   generateWidgets: () => generateWidgets
 });
 module.exports = __toCommonJS(index_exports);
-var import_core3 = require("@rjsf/core");
+var import_core2 = require("@rjsf/core");
 
 // src/templates/ArrayFieldItemTemplate/index.tsx
 var import_antd = require("antd");
@@ -147,7 +147,6 @@ function ArrayFieldTemplate(props) {
 var import_react2 = require("react");
 var import_antd3 = require("antd");
 var import_utils3 = require("@rjsf/utils");
-var import_core = require("@rjsf/core");
 var import_jsx_runtime3 = require("react/jsx-runtime");
 var INPUT_STYLE = {
   width: "100%"
@@ -220,20 +219,19 @@ function BaseInputTemplate(props) {
   );
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)(import_jsx_runtime3.Fragment, { children: [
     input,
-    options.allowClearTextInputs && !readonly && !disabled && value && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(ClearButton2, { registry, onClick: handleClear }),
-    /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_core.SchemaExamples, { id, schema })
+    options.allowClearTextInputs && !readonly && !disabled && value && /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(ClearButton2, { registry, onClick: handleClear })
   ] });
 }
 
 // src/templates/FieldDescriptionTemplate/index.tsx
-var import_core2 = require("@rjsf/core");
+var import_core = require("@rjsf/core");
 var import_jsx_runtime4 = require("react/jsx-runtime");
 function DescriptionField(props) {
   const { id, description, registry, uiSchema } = props;
   if (!description) {
     return null;
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { id, children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_core2.RichDescription, { description, registry, uiSchema }) });
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("span", { id, children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(import_core.RichDescription, { description, registry, uiSchema }) });
 }
 
 // src/templates/ErrorList/index.tsx
@@ -1265,7 +1263,7 @@ function generateTheme() {
 }
 var Theme = generateTheme();
 function generateForm() {
-  return (0, import_core3.withTheme)(generateTheme());
+  return (0, import_core2.withTheme)(generateTheme());
 }
 var Form3 = generateForm();
 var index_default = Form3;

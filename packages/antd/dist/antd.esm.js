@@ -116,7 +116,6 @@ import {
   examplesId,
   getInputProps
 } from "@rjsf/utils";
-import { SchemaExamples } from "@rjsf/core";
 import { Fragment, jsx as jsx3, jsxs as jsxs3 } from "react/jsx-runtime";
 var INPUT_STYLE = {
   width: "100%"
@@ -189,8 +188,7 @@ function BaseInputTemplate(props) {
   );
   return /* @__PURE__ */ jsxs3(Fragment, { children: [
     input,
-    options.allowClearTextInputs && !readonly && !disabled && value && /* @__PURE__ */ jsx3(ClearButton2, { registry, onClick: handleClear }),
-    /* @__PURE__ */ jsx3(SchemaExamples, { id, schema })
+    options.allowClearTextInputs && !readonly && !disabled && value && /* @__PURE__ */ jsx3(ClearButton2, { registry, onClick: handleClear })
   ] });
 }
 

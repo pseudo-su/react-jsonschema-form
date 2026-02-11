@@ -164,8 +164,7 @@
     );
     return /* @__PURE__ */ jsxRuntime.jsxs(jsxRuntime.Fragment, { children: [
       input,
-      options.allowClearTextInputs && !readonly && !disabled && value && /* @__PURE__ */ jsxRuntime.jsx(ClearButton2, { registry, onClick: handleClear }),
-      /* @__PURE__ */ jsxRuntime.jsx(core.SchemaExamples, { id, schema })
+      options.allowClearTextInputs && !readonly && !disabled && value && /* @__PURE__ */ jsxRuntime.jsx(ClearButton2, { registry, onClick: handleClear })
     ] });
   }
   function DescriptionField(props) {

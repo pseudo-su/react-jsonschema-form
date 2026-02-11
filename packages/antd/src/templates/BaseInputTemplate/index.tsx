@@ -10,7 +10,7 @@ import {
   RJSFSchema,
   StrictRJSFSchema,
 } from '@rjsf/utils';
-import { SchemaExamples } from '@rjsf/core';
+// import { SchemaExamples } from '@rjsf/core';
 
 const INPUT_STYLE = {
   width: '100%',
@@ -108,7 +108,7 @@ export default function BaseInputTemplate<
       {options.allowClearTextInputs && !readonly && !disabled && value && (
         <ClearButton registry={registry} onClick={handleClear} />
       )}
-      <SchemaExamples id={id} schema={schema} />
+      {/* <SchemaExamples id={id} schema={schema} /> */}
     </>
   );
 }
